@@ -178,6 +178,132 @@
 
     </section>
     <section>
+      <section>
+  <h2>Worked Example: Dose Calculator Interface (Bad vs Good Design)</h2>
+
+  <p>
+    This exercise analyzes a medical dose calculator using Norman’s Action Cycle.
+    The comparison highlights how poor interface design increases cognitive load,
+    error risk, and uncertainty, while improved design supports safer interaction
+    through visibility, feedback, and recognition.
+  </p>
+
+  <table border="1">
+    <caption>
+      Norman’s Action Cycle applied to a dose calculator:
+      Numeric keypad vs incremental digit buttons
+    </caption>
+
+    <thead>
+      <tr>
+        <th scope="col">Norman’s Stage</th>
+        <th scope="col">Bad Design (Numeric Keypad)</th>
+        <th scope="col">Good Design (Individual Digit Buttons)</th>
+        <th scope="col">HCI Principle Violated / Applied</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">1. Goal</th>
+        <td>“Administer 12.5 ml/hr to patient”</td>
+        <td>Same goal</td>
+        <td>
+          Goal remains constant — interface design does not change the medical intent
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">2. Plan</th>
+        <td>
+          “I need to enter the exact dose”<br>
+          Requires recalling numbers, decimal placement, and units
+        </td>
+        <td>
+          “I need to increment digits to reach 12.5”<br>
+          Plan shifts to visual adjustment
+        </td>
+        <td>
+          ❌ Bad: High memory load (recall)<br>
+          ✅ Good: Recognition over recall
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">3. Specify</th>
+        <td>
+          Type: 0 → 1 → 2 → . → 5 → 0<br>
+          (6 precise keystrokes)
+        </td>
+        <td>
+          Press: Tens (1), Units (2), Tenths (5)<br>
+          (3 clear actions)
+        </td>
+        <td>
+          ❌ Bad: Precision under stress<br>
+          ✅ Good: Error-resistant specification
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">4. Execute</th>
+        <td>
+          Press 6 small keys in exact sequence
+        </td>
+        <td>
+          Press 3 larger, task-specific buttons
+        </td>
+        <td>
+          ❌ Bad: High execution complexity (Fitts’s Law)<br>
+          ✅ Good: Reduced motor effort
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">5. Perceive</th>
+        <td>
+          “1250” appears on display (ambiguous)
+        </td>
+        <td>
+          “12.50 ml/hr” shown with clear decimal and units
+        </td>
+        <td>
+          ❌ Bad: Gulf of Evaluation wide<br>
+          ✅ Good: Clear visual mapping
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">6. Interpret</th>
+        <td>
+          “Does 1250 mean 12.5 or 125.0?”
+        </td>
+        <td>
+          “12.50 clearly means twelve point five zero ml/hr”
+        </td>
+        <td>
+          ❌ Bad: Mental conversion required<br>
+          ✅ Good: Direct interpretation
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">7. Evaluate / Compare</th>
+        <td>
+          “Did I type correctly? I should double-check.”
+        </td>
+        <td>
+          “The display shows exactly 12.50, matching the prescription.”
+        </td>
+        <td>
+          ❌ Bad: Uncertainty and rechecking<br>
+          ✅ Good: Confidence in accuracy
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
     <section>
       <h2>Quick Note</h2>
       <p>

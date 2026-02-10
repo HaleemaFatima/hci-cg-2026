@@ -189,20 +189,20 @@
 
     </section>
     <section>
-      <section>
+      <section><section class="highlight-table">
   <h2>Worked Example: Dose Calculator Interface (Bad vs Good Design)</h2>
 
   <p>
-    This exercise analyzes a medical dose calculator using Norman’s Action Cycle.
-    The comparison highlights how poor interface design increases cognitive load,
-    error risk, and uncertainty, while improved design supports safer interaction
-    through visibility, feedback, and recognition.
+    This exercise applies Norman’s Action Cycle to a medical dose calculator.
+    The comparison illustrates how interface design choices directly affect
+    cognitive load, execution accuracy, and user confidence in high-risk,
+    safety-critical contexts.
   </p>
 
   <table border="1">
     <caption>
       Norman’s Action Cycle applied to a dose calculator:
-      Numeric keypad vs incremental digit buttons
+      Numeric keypad (bad design) vs incremental digit buttons (good design)
     </caption>
 
     <thead>
@@ -216,104 +216,109 @@
 
     <tbody>
       <tr>
-        <th scope="row">1. Goal</th>
-        <td>“Administer 12.5 ml/hr to patient”</td>
-        <td>Same goal</td>
+        <th scope="row" class="highlight-stage">1. Goal</th>
         <td>
-          Goal remains constant — interface design does not change the medical intent
+          “Administer 12.5 ml/hr to the patient.”
+        </td>
+        <td>
+          Same medical goal.
+        </td>
+        <td>
+          Goal remains constant — interface design does not alter clinical intent.
         </td>
       </tr>
 
       <tr>
-        <th scope="row">2. Plan</th>
+        <th scope="row" class="highlight-stage">2. Plan</th>
         <td>
-          “I need to enter the exact dose”<br>
-          Requires recalling numbers, decimal placement, and units
+          “I need to enter the exact dose.”<br>
+          Requires recalling numbers, decimal placement, and units.
         </td>
         <td>
-          “I need to increment digits to reach 12.5”<br>
-          Plan shifts to visual adjustment
+          “I need to increment digits until the value reaches 12.5.”<br>
+          Planning shifts from memory-based entry to visual adjustment.
         </td>
         <td>
-          ❌ Bad: High memory load (recall)<br>
-          ✅ Good: Recognition over recall
+          ❌ High memory load (recall).<br>
+          ✅ Recognition over recall.
         </td>
       </tr>
 
       <tr>
-        <th scope="row">3. Specify</th>
+        <th scope="row" class="highlight-stage">3. Specify</th>
         <td>
           Type: 0 → 1 → 2 → . → 5 → 0<br>
-          (6 precise keystrokes)
+          Six precise keystrokes required.
         </td>
         <td>
-          Press: Tens (1), Units (2), Tenths (5)<br>
-          (3 clear actions)
+          Press: Tens (1), Units (2), Tenths (5).<br>
+          Three clear, structured actions.
         </td>
         <td>
-          ❌ Bad: Precision under stress<br>
-          ✅ Good: Error-resistant specification
+          ❌ Precision under stress.<br>
+          ✅ Error-resistant specification.
         </td>
       </tr>
 
       <tr>
-        <th scope="row">4. Execute</th>
+        <th scope="row" class="highlight-stage">4. Execute</th>
         <td>
-          Press 6 small keys in exact sequence
+          Press six small keys in exact sequence.
         </td>
         <td>
-          Press 3 larger, task-specific buttons
+          Press three larger, task-specific buttons.
         </td>
         <td>
-          ❌ Bad: High execution complexity (Fitts’s Law)<br>
-          ✅ Good: Reduced motor effort
-        </td>
-      </tr>
-
-      <tr>
-        <th scope="row">5. Perceive</th>
-        <td>
-          “1250” appears on display (ambiguous)
-        </td>
-        <td>
-          “12.50 ml/hr” shown with clear decimal and units
-        </td>
-        <td>
-          ❌ Bad: Gulf of Evaluation wide<br>
-          ✅ Good: Clear visual mapping
+          ❌ High execution complexity (Fitts’s Law).<br>
+          ✅ Reduced motor effort and slip risk.
         </td>
       </tr>
 
       <tr>
-        <th scope="row">6. Interpret</th>
+        <th scope="row" class="highlight-stage">5. Perceive</th>
+        <td>
+          “1250” appears on the display, without units or decimal clarity.
+        </td>
+        <td>
+          “12.50 ml/hr” displayed with explicit decimal and units.
+        </td>
+        <td>
+          ❌ Wide Gulf of Evaluation.<br>
+          ✅ Clear visual mapping.
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row" class="highlight-stage">6. Interpret</th>
         <td>
           “Does 1250 mean 12.5 or 125.0?”
         </td>
         <td>
-          “12.50 clearly means twelve point five zero ml/hr”
+          “12.50 clearly means twelve point five zero ml/hr.”
         </td>
         <td>
-          ❌ Bad: Mental conversion required<br>
-          ✅ Good: Direct interpretation
+          ❌ Mental conversion required.<br>
+          ✅ Direct interpretation.
         </td>
       </tr>
 
       <tr>
-        <th scope="row">7. Evaluate / Compare</th>
+        <th scope="row" class="highlight-stage">7. Evaluate / Compare</th>
         <td>
-          “Did I type correctly? I should double-check.”
+          “Did I type it correctly? I should double-check.”
         </td>
         <td>
-          “The display shows exactly 12.50, matching the prescription.”
+          “The display exactly matches the prescription.”
         </td>
         <td>
-          ❌ Bad: Uncertainty and rechecking<br>
-          ✅ Good: Confidence in accuracy
+          ❌ Uncertainty and rechecking.<br>
+          ✅ Confidence in accuracy.
         </td>
       </tr>
     </tbody>
   </table>
 </section>
+
       <section>
   <h2>Worked Example: “Who Paid?” – Shared Dinner Expense</h2>
 

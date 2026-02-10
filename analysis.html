@@ -8,11 +8,22 @@
   <title>Interaction Analysis – Norman vs GOMS</title>
 
   <style>
-    /* Minimal styling (Lab 01 allowed): highlight rows where Norman and GOMS directly correspond */
-    .norman-goms-match {
-      background-color: #fff3cd; /* warm, subtle amber */
-    }
-  </style>
+  /* Highlight rows where Norman & GOMS correspond */
+  .norman-goms-match {
+    background-color: #fff3cd;
+  }
+
+  /* Highlight Norman stage column (Who Paid table) */
+  .highlight-table th {
+    background-color: #fff3cd;
+  }
+
+  .highlight-stage {
+    background-color: #fff3cd;
+    font-weight: bold;
+  }
+</style>
+
 </head>
 <body>
 
@@ -313,7 +324,7 @@
     and multi-step verification.
   </p>
 
-  <table border="1">
+  <table border="1" class="highlight-table">
     <caption>
       Norman’s Action Cycle applied to a shared expense scenario (“Who Paid?”)
     </caption>
@@ -329,7 +340,7 @@
 
     <tbody>
       <tr>
-        <th scope="row">1. Goal</th>
+        <th scope="row" class="highlight-stage">1. Goal</th>
         <td>
           “Record that Maria paid 5000 PKR for a group dinner at Kababjees
           so everyone pays fairly.”
@@ -344,7 +355,7 @@
       </tr>
 
       <tr>
-        <th scope="row">2. Plan</th>
+        <th scope="row" class="highlight-stage">2. Plan</th>
         <td>
           1. Open Splitswise<br>
           2. Tap “Add Expense”<br>
@@ -364,7 +375,7 @@
       </tr>
 
       <tr>
-        <th scope="row">3. Specify</th>
+        <th scope="row" class="highlight-stage">3. Specify</th>
         <td>
           Type “Dinner Kababjees”, enter “5000”, select “Maria” as payer,
           check “Ali”, “Ahmed”, “Sara”, choose “Equal split”, tap “Save”.
@@ -379,7 +390,7 @@
       </tr>
 
       <tr>
-        <th scope="row">4. Execute</th>
+        <th scope="row" class="highlight-stage">4. Execute</th>
         <td>
           Multiple interactions:<br>
           Typing, selecting, checking boxes, confirming choices.
@@ -389,12 +400,12 @@
           during dinner.
         </td>
         <td>
-          Awkward pauses or distractions in social setting.
+          Awkward pauses or distractions in social settings.
         </td>
       </tr>
 
       <tr>
-        <th scope="row">5. Perceive</th>
+        <th scope="row" class="highlight-stage">5. Perceive</th>
         <td>
           1. Green checkmark animation<br>
           2. “Expense added” confirmation<br>
@@ -412,7 +423,7 @@
       </tr>
 
       <tr>
-        <th scope="row">6. Interpret</th>
+        <th scope="row" class="highlight-stage">6. Interpret</th>
         <td>
           “The expense is saved. Ali, Ahmed, and Sara each owe
           1250 PKR. Maria is reimbursed.”
@@ -427,7 +438,7 @@
       </tr>
 
       <tr>
-        <th scope="row">7. Evaluate</th>
+        <th scope="row" class="highlight-stage">7. Evaluate</th>
         <td>
           1. Check expense appears in group history<br>
           2. Verify all participants are included<br>
@@ -445,71 +456,7 @@
     </tbody>
   </table>
 </section>
-<table border="1">
-  <caption>
-    Norman’s Action Cycle applied to an expense-sharing mobile app
-  </caption>
 
-  <thead>
-    <tr>
-      <th scope="col">Norman’s Stage</th>
-      <th scope="col">Real-World Example</th>
-      <th scope="col">HCI Challenge / Design Need</th>
-      <th scope="col">Social & Cognitive Dimension</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr class="norman-goms-match">
-      <th scope="row">1. Goal</th>
-      <td>Record dinner expense fairly.</td>
-      <td>Complex goal beyond data entry.</td>
-      <td>Social fairness and trust</td>
-    </tr>
-
-    <tr>
-      <th scope="row">2. Plan</th>
-      <td>Decide payer, participants, split method.</td>
-      <td>Multiple decision points.</td>
-      <td>Fear of appearing unfair</td>
-    </tr>
-
-    <tr>
-      <th scope="row">3. Specify</th>
-      <td>Select names, amount, split type.</td>
-      <td>Memory burden and accuracy.</td>
-      <td>Social pressure to be correct</td>
-    </tr>
-
-    <tr class="norman-goms-match">
-      <th scope="row">4. Execute</th>
-      <td>Typing, selecting, confirming.</td>
-      <td>Multiple coordinated actions.</td>
-      <td>Interrupts real-world conversation</td>
-    </tr>
-
-    <tr>
-      <th scope="row">5. Perceive</th>
-      <td>Checkmarks, notifications, balance updates.</td>
-      <td>Multiple feedback channels needed.</td>
-      <td>Others must also see confirmation</td>
-    </tr>
-
-    <tr>
-      <th scope="row">6. Interpret</th>
-      <td>Understanding who owes what.</td>
-      <td>Financial interpretation complexity.</td>
-      <td>Trust in system accuracy</td>
-    </tr>
-
-    <tr>
-      <th scope="row">7. Evaluate</th>
-      <td>Verify expense history and reactions.</td>
-      <td>Multi-step verification.</td>
-      <td>Social acceptance of outcome</td>
-    </tr>
-  </tbody>
-</table>
 
 
     <section>

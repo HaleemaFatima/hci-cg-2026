@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
 
   <!-- Page title shown in browser tab and announced by screen readers -->
-  <title>Don Norman – Contact</title>
+  <title>Contact – Interaction Feedback</title>
 </head>
 <body>
 
   <!-- Page header: identifies the page purpose -->
   <header>
-    <h1>Contact</h1>
+    <h1>Interaction Feedback</h1>
   </header>
 
   <!-- Primary navigation: identical structure across all pages -->
@@ -36,14 +36,17 @@
       
       <!-- Groups related form controls and provides context -->
       <fieldset>
-        <legend>Send a Message</legend>
+        <legend>Provide Interaction Feedback</legend>
 
         <!-- Label explicitly associated with its input -->
-        <label for="subject">Subject</label><br>
-        <input type="text" id="subject" name="subject"><br><br>
+        <label for="subject">Message subject</label><br>
+        <input type="text" id="subject" name="subject" required>
+        <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+
+
 
         <!-- Textarea with clear label for screen readers -->
-        <label for="message">Message</label><br>
+        <label for="message">Feedback message</label><br>
         <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
 
         <!-- Submit button is keyboard accessible by default -->

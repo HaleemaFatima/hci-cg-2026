@@ -90,6 +90,88 @@
       </table>
     </section>
     <section class="design-focus">
+      <section>
+  <h2>Norman’s Stages</h2>
+
+  <p>
+    The interaction cycle can be divided into two major phases:
+    <strong>execution</strong> and <strong>evaluation</strong>.
+    These can then be subdivided into further stages, seven in all.
+    The stages in Norman’s model of interaction are as follows:
+  </p>
+
+  <ol>
+    <li>Establishing the goal.</li>
+    <li>Forming the intention.</li>
+    <li>Specifying the action sequence.</li>
+    <li>Executing the action.</li>
+    <li>Perceiving the system state.</li>
+    <li>Interpreting the system state.</li>
+    <li>
+      Evaluating the system state with respect to the goals and intentions.
+    </li>
+  </ol>
+</section>
+
+      <section>
+  <h2>GOMS</h2>
+
+  <p>
+    The GOMS model of Card, Moran and Newell is an acronym for
+    <strong>Goals, Operators, Methods and Selection</strong> [56].
+    A GOMS description consists of these four elements:
+  </p>
+
+  <p>
+    <strong>Goals</strong>
+    These are the user’s goals, describing what the user wants to achieve.
+    Further, in GOMS the goals are taken to represent a ‘memory point’ for the user,
+    from which he can evaluate what should be done and to which he may return
+    should any errors occur.
+  </p>
+
+  <p>
+    <strong>Operators</strong>
+    These are the lowest level of analysis. They are the basic actions that the user
+    must perform in order to use the system. They may affect the system
+    (for example, press the ‘X’ key) or only the user’s mental state
+    (for example, read the dialog box). There is still a degree of flexibility about
+    the granularity of operators; we may take the command level ‘issue the SELECT command’
+    or be more primitive: ‘move mouse to menu bar, press centre mouse button . . .’.
+  </p>
+
+  <p>
+    <strong>Methods</strong>
+    As we have already noted, there are typically several ways in which a goal can be
+    split into subgoals. For instance, in a certain window manager a currently selected
+    window can be closed to an icon either by selecting the ‘CLOSE’ option from a pop-up
+    menu, or by hitting the ‘L7’ function key. In GOMS these two goal decompositions are
+    referred to as methods, so we have the CLOSE-METHOD and the L7-METHOD:
+  </p>
+
+  <pre>
+GOAL: ICONIZE-WINDOW
+  . select GOAL: USE-CLOSE-METHOD
+      . MOVE-MOUSE-TO-WINDOW-HEADER
+      . POP-UP-MENU
+      . CLICK-OVER-CLOSE-OPTION
+  . GOAL: USE-L7-METHOD
+      . PRESS-L7-KEY
+  </pre>
+
+  <p>
+    The dots are used to indicate the hierarchical level of goals.
+  </p>
+
+  <p>
+    <strong>Selection</strong>
+    From the above snippet we see the use of the word select where the choice of methods
+    arises. GOMS does not leave this as a random choice, but attempts to predict which
+    methods will be used. This typically depends both on the particular user and on the
+    state of the system and details about the goals. 
+  </p>
+</section>
+
   <h2>Design Focus: GOMS Saves Money</h2>
 
   <p>
